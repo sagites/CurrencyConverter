@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+p,
+img {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+}
+
+.card {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning {
+    margin: .625rem auto;
+}
+
+@media screen and (max-width: 700px) {
+
+    body {
+        display: grid;
+    }
+
+    .conversionPoint {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        al-content: center;
+    }
+
+    .transferIcon {
+        place-items: center;
+        margin: .9375rem auto;
+
+    }
+
+    .transferIcon button {
+        background-color: #ebfffc;
+        border-radius: 50%;
+        width: 5.25rem;
+        height: 5.25rem;
+        place-items: center;
+    }
+
+    .amountBox {
+        display:  grid;
+        grid-template-rows: 1fr 1fr;
+        margin: .625rem auto;
+        gap: .9375rem;
+    }
+
+    input {
+        width:200px;
+        padding:  15px;
+        font-size: 20px;
+        border-radius: .625rem;
+        border: 1px;
+    }
+
+    .transferIcon button img {
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 701px) {
+
+    .conversionPoint {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+    
+    .amountBox {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 1.25rem;
+    }
+
+    input {
+        width:300px;
+        padding:  15px;
+        font-size: 20px;
+        border-radius: .625rem;
+        border: 1px;
+    }
+
+    .transferIcon button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+
+    .transferIcon button img {
+        width: 30px;
+    }
+
+    .transferImage {
+        content: url('./images/transfer.png');
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <main class="container">
+
+        <div class="card">
+            <p class="warning">**Please enter the 3 letter currency code of required currency</p>
+
+            <div class="conversionPoint">
+
+                <div class="amountBox">
+                    <input required class="initialAmount" type="text" placeholder="Initial Amount:">
+                    <input required placeholder="From:" class="initial" type="text">
+                </div>
+    
+                <div class="transferIcon">
+                    <button class="button">
+                          <img class="transferImage" src="./images/up-down.png" alt="">
+                    </button>
+                </div>
+    
+                <div class="amountBox">
+    
+                    <input required placeholder="To:" class="final" type="text">
+                    <input readonly placeholder="Converted Amount:" class="convertedAmount" type="text">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
