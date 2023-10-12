@@ -21,8 +21,7 @@ function getAmount (){
     fetch(`https://api.apilayer.com/fixer/convert?to=${final.value}&from=${initial.value}&amount=${initialAmount.value}`, requestOptions)
   .then(response => response.json())
   .then(result => {
-    var data = result;
-    convertedAmount.value = data.
+    console.log(result);
   })
   .catch(error => console.log('error', error));
 } 
